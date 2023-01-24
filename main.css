@@ -102,6 +102,7 @@ h3 {
 
 button {
     padding: 4px 0;
+    margin-top: 10px;
     width: 100%;
     background-color: rgb(94, 164, 107);
     border: none;
