@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: rgb(234, 234, 234);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(94, 164, 107);
+}
+
+h1, a {
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a {
+    margin-left: 5px;
+}
+
+.sobre-a-loja {
+    display: flex;
+    margin: 25px 0;
+}
+
+.sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 50px;
+}
+
+h2 {
+    color: rgb(116, 203, 132);
+    font-style: italic;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+
+.sobre {
+    border-bottom: 1px solid rgb(116, 203, 132);
+}
+
+.sobre-a-loja div > p {
+    padding-top: 20px;
+}
+
+p {
+    text-align: justify;
+    font-size: 13px;
+}
+
+.produtos-disponiveis {
+    border-bottom: 1px solid rgb(116, 203, 132);
+    margin: 21px 0;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.produtos > div {
+    border-bottom: 1px solid rgb(116, 203, 132);
+}
+
+section img {
+    max-width: 100%;
+}
+
+.tenis-mola {
+    transform: scaleX(-1);
+}
+
+.produto {
+    max-width: 300;
+    width: 100%;
+    margin: 10px 0;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+button {
+    padding: 4px 0;
+    width: 100%;
+    background-color: rgb(94, 164, 107);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: rgb(63, 123, 73);
+}
+
+footer {
+    background-color: rgb(94, 164, 107);
+    margin-top: 100px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sobre-a-loja {
+        display: block;
+        margin: 25px 0;
+    }
+    
+    .sobre-a-loja img {
+        max-width: 340px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .sobre-a-loja div > p {
+        padding: 20px 0;
+    }
+    
+    h2 {
+        color: rgb(116, 203, 132);
+        font-style: italic;
+        font-size: 1.2em;
+        padding-bottom: 15px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        column-gap: 1%;
+        row-gap: 1%;
+    }
+
+    button {
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    button:hover {
+        background-color: rgb(63, 123, 73);
+    }
+
+    footer {
+        background-color: rgb(94, 164, 107);
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    .menu {
+        font-size: 18px;
+    }
+
+    .sobre-a-loja {
+        display: block;
+        margin: 25px 0;
+    }
+
+    h2 {
+        color: rgb(116, 203, 132);
+        font-style: italic;
+        font-size: 1.5em;
+        padding-bottom: 15px;
+    }
+    
+    .sobre-a-loja img {
+        max-width: 100%;
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    .sobre-a-loja div > p {
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 1%;
+    }
+
+    button {
+        margin: 25px 0;
+        padding: 15px 0;
+    }
+
+    footer {
+        background-color: rgb(94, 164, 107);
+        margin-top: 100px;
+    }
+}
